@@ -1,0 +1,25 @@
+algorithme EX 1
+variable
+    T1:tableaux[0,N-1]
+    T2:tableaux[0,N-1]
+    T3:tableaux[0,N-1]
+    N,m:entier
+debut 
+pour i de 0 a N faire
+    pour j de 0 a m faire
+        ecrire ("donner element",t1)
+        lire(T[1])
+    fin pour 
+    pour i de 0 a N faire
+         pour j de 0 a m faire
+         Ecrire(T[2])
+    fin pour 
+    pour i de 0 a N faire
+         pour j de 0 a m faire
+             T[3]=T[1]+T[2]
+    fin pour
+ecrire (t1)
+ecrire (t2)
+ecrire (t3)
+fin pour
+fin EX1

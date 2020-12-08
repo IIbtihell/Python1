@@ -1,0 +1,39 @@
+algorithme EX 1 tableaux 2d
+variable
+    T:tableaux[0,N-1]
+    N,i:entier
+    S,f,Min,Max:entier
+    Moyene:reel
+debut 
+    repeter{
+    Ecrire("donner les nligne")
+    lire 👎
+    Ecrire("donner les ncolone")
+    lire (M)}
+    jusqua (M>=3)et(N<=3)
+    pour i de 0 a N-1 faire
+        ecrire ("donner élément",i+1)
+        lire(T[i])
+    fin pour 
+    pour i de 0 a N-1 faire
+        Ecrire(T[i])
+    fin pour 
+    S<--0 , P<--1
+    pour i de 0 a N-1 faire
+        S<--S+T[i]
+        P<--p*T[i]
+    fin pour
+    Moy<--S/N
+    Max<-- T[0], Min<--T[0]
+    pour i de 1 a N-1 faire
+        si(T>Max )alors
+        faire Max<--T[i]
+        si (T[i]<Min)alors
+        faire Min <--T[i]
+   fin pour
+    Ecrire("la somme est",S)
+    Ecrire("la produit est",p)
+    Ecrire("la moyenne est",Moy)
+    Ecrire("le min est",Min) 
+    Ecrire("le max est",Max)
+fin EX3

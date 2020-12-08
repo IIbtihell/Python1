@@ -1,0 +1,20 @@
+Algorithme  tri_Croissant;
+Var
+              T   : tableau [1..100] de réels ;
+              N ,i,j:  entiers ;
+                Aux: réel ;
+Debut
+                Si N=0 alors
+                               Ecrire(‘le tableau est vide ‘) ;
+                Sinon
+                          Pour i <--  1 à N-1 Faire
+                                               Pour j <--  i+1 à N  Faire
+                                                           Si T[i] > T[j]  alors
+                                                                    Aux <--  T[i] ;
+                                                                    T[i] <--  T[j] ;
+                                                                    T[j] <--  Aux ;
+                                                               Finsi
+                                             Finpour j
+                           Finpour i
+                Finsi
+Fin

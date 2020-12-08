@@ -1,0 +1,22 @@
+Algorithme  tableau_somme;
+Var
+              V   : tableau [1..5] de réels ;
+              S   :  réel ;
+i  :entier;
+Debut
+                (*lecture  des élements  du tableau*)
+                Pour i <--  1 à 5 faire
+                               Ecrire(‘entrer l’element  N° ’,i);
+                               Lire(V[i]) ;
+                Finpour i
+                (*calcul de la somme des élements du tableau *)
+                S <--  0 ;
+Pour i <--  1 à 5 faire
+                               S <--  S + V[i] ;
+                Finpour i
+(*afficher des éléments du tableau *)
+                Pour i <--  1 à 5 faire
+                               Ecrire(‘l’’element  N° ’,i,’est : ‘,V[i]);
+                Finpour i
+                Ecrire(‘la somme des éléments du tableau est :‘,S) ;
+fin

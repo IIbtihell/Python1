@@ -1,0 +1,15 @@
+Produit_matriciel (a: Matrice carrée , b: Matrice carrée, n:
+entier): Matrice carrée
+VAR c: Matrice carrée n*n
+i: entier
+Debut
+Pour i <- 1 a n Faire
+Pour j de 1 a n Faire
+c[i][j] <- 0
+Pour k de 1 a n Faire
+c[i][j] <- c[i][j] + a[i][k] * b[k][j]
+Fpour
+Fpour
+Fpour
+retourner c
+Fin

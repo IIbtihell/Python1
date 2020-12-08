@@ -1,0 +1,17 @@
+n=int(input("saisir la nomber des lignes:"))
+m=int(input("saisir la nomber des colonne:"))
+t1=[[0for i in range (n)]for j in range(m)] 
+t2=[[0for i in range (n)]for j in range(m)]
+t3=[[0for i in range (n)]for j in range(m)]
+for i in range (n):
+    for j in range (m):
+        t1[i][j]=int(input("saisir la nomber des element t1  :" ))
+    for i in range (n):
+        for j in range (m):
+            t2[i][j]=int(input("saisir la nomber des elemnt t2: "))
+            for i in range (n):
+                for j in range (m):
+                    t3[i][j]=t1[i][j]*t2[i][j]
+print(t1)
+print(t2)
+print(t3)

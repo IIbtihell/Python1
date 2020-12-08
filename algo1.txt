@@ -1,0 +1,22 @@
+Le calcul de la moyenne et du minimum des éléments d’un tableau.
+Moyenne (T: Tableau d’entier, N: entier) : r´eel
+VAR somme, i: entiers
+moyenne : r´eel
+Début
+somme <- 0
+Pour i <- 1 a N Faire
+somme <- somme + T[i]
+Fpour
+moyenne <- somme / N
+retourner moyenne
+Minimum (T: Tableau d’entier, N: entier): entier
+VAR min, i: entiers
+D´ebut
+min <- T[1]
+Pour i <- 2 a N Faire
+Si T[i]<min
+Alors min=T[i]
+Fsi
+Fpour
+retourner min
+
